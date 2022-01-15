@@ -2,6 +2,7 @@ body {
   font-family: $text-main;
   color: $color-design-black;
   background-color: $bg-btn-light;
+  min-width: 320px;
 }
 .list {
   list-style: none;

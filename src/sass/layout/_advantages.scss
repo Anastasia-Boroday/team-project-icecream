@@ -1,0 +1,55 @@
+.advantages {
+  background-color: $bg-section;
+}
+.advantages__item {
+  width: 230px;
+  position: relative;
+  padding-top: 66px;
+
+  &:not(:last-child) {
+    padding-bottom: 38px;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 33px;
+    height: 50px;
+  }
+}
+.advantages__item1 {
+  &::before {
+    content: url('../images/pseudo-elements-svg/bucket.png');
+  }
+}
+.advantages__item2 {
+  &::before {
+    content: url('../images/pseudo-elements-svg/bucket-apple.png');
+  }
+}
+.advantages__item3 {
+  &::before {
+    content: url('../images/pseudo-elements-svg/lollipop-heart.png');
+  }
+}
+.advantages__item-title {
+  font-family: $text-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(41px / 36px);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $color-design-main;
+}
+.advantages__item-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+
+  color: $color-design-black;
+}
