@@ -1,0 +1,98 @@
+.about-section {
+  background-color: #fff5f6;
+  padding-top: 125px;
+  padding-bottom: 39px;
+  align-items: center;
+}
+
+.about__milk-overlay {
+  background-size: 100% auto;
+  background-image: url(../images/about/ab-milk-mobile.png);
+  background-repeat: no-repeat;
+  background-position: left 90%;
+}
+
+.about__label-heading {
+  margin-bottom: 15px;
+  text-align: center;
+
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+}
+
+.about__heading {
+  margin-bottom: 26px;
+  text-align: center;
+
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #d41443;
+}
+
+.about__pic {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+
+  color: $color-design-black;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.about__text2 {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+
+  color: $color-description;
+}
+
+.about__text-container {
+  padding: 0px 30px;
+  margin-bottom: 17px;
+}
+
+.about__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 176px;
+  height: 44px;
+
+  border: 0;
+  border-radius: 22px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: $color-design-main;
+}
