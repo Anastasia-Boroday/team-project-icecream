@@ -11,6 +11,9 @@
     margin-bottom: 15px;
   }
 }
+.reviews__set {
+  font-weight: 500;
+}
 
 .reviews__content {
   position: relative;
@@ -32,6 +35,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    cursor: pointer;
 
     @media screen and (min-width: $tablet) {
       bottom: -24px;
@@ -121,6 +125,7 @@
     background-image: url(./../images/customReviews/reviews_dots.svg);
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 
     @media screen and (min-width: $tablet) {
       margin-top: 35px;

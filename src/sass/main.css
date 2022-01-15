@@ -144,6 +144,10 @@ img {
   }
 }
 
+.reviews__set {
+  font-weight: 500;
+}
+
 .reviews__content {
   position: relative;
   background-color: #fafafa;
@@ -164,6 +168,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .reviews__content::after {
@@ -260,6 +265,7 @@ img {
   background-image: url(./../images/customReviews/reviews_dots.svg);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .reviews__name::after {
