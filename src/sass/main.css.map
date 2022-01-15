@@ -1,0 +1,23 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;GAGG;AEHH,AAAA,IAAI,CAAC;EACH,WAAW,EDDD,SAAS,EAAE,UAAU;ECE/B,KAAK,EDGc,OAAO;ECF1B,gBAAgB,EDSH,OAAO;CCRrB;;AACD,AAAA,KAAK,CAAC;EACJ,UAAU,EAAE,IAAI;CACjB;;AACD,AAAA,KAAK,CAAC;EACJ,eAAe,EAAE,IAAI;CACtB;;ACVD,AAAA,CAAC;AACD,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE,CAAC;EACD,MAAM,EAAE,GAAG;CACZ;;AACD,AAAA,EAAE,CAAC;EACD,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AACD,AAAA,GAAG,CAAC;EACF,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;CACb;;ACjBD,AAAA,gBAAgB,CAAC;EACf,QAAQ,EAAE,QAAQ;EAClB,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,QAAQ,EAAE,MAAM;EAChB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,IAAI,EAAE,aAAa;EACnB,SAAS,EAAE,UAAU;EACrB,MAAM,EAAE,IAAI;CACb;;ACLC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EANrC,AAAA,UAAU,CAAC;IAOP,KAAK,EAAE,KAAK;GAQf;;;AANC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EATrC,AAAA,UAAU,CAAC;IAUP,KAAK,EAAE,KAAK;GAKf;;;AAHC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAZtC,AAAA,UAAU,CAAC;IAaP,KAAK,EAAE,MAAM;GAEhB",
+    "sources": [
+        "main.scss",
+        "utils/_varibles.scss",
+        "base/_common.scss",
+        "base/_reset.scss",
+        "utils/_hidden.scss",
+        "components/_container.scss",
+        "layout/_header.scss",
+        "layout/_hero.scss",
+        "layout/_products.scss",
+        "layout/_about.scss",
+        "layout/_advantages.scss",
+        "layout/_gallery.scss",
+        "layout/_customer-reviews.scss",
+        "layout/_contacts.scss",
+        "layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
