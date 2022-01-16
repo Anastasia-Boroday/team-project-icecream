@@ -212,15 +212,27 @@ header {
   right: 0;
   width: 250px;
   height: 100vh;
-  background-color: antiquewhite;
+  padding: 25px;
+  background-color: green;
   z-index: 999;
 }
 
-.btn_mob--close {
+.btn_mob_menu--close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
   top: 25px;
   right: 30px;
-  margin-top: 100px;
+  width: 20px;
+}
+
+.btn__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .hero {
