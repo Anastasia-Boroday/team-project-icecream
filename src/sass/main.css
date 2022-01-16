@@ -64,11 +64,13 @@ img {
   padding-right: 20px;
   margin: 0 auto;
 }
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -76,6 +78,7 @@ img {
     padding-right: 35px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
@@ -108,6 +111,7 @@ img {
   text-transform: uppercase;
   color: var(--main-white-color);
 }
+
 .main-title__passion {
   font-size: 58px;
   line-height: 90.5%;
@@ -127,8 +131,179 @@ img {
   margin-right: 15px;
 }
 
+.reviews__photo {
+  width: 85px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .reviews__photo {
+    margin-bottom: 29px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__photo {
+    margin-bottom: 19px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews__photo {
+    margin-bottom: 15px;
+  }
+}
+
+.reviews__content {
+  position: relative;
+  background-color: #fafafa;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews__content::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: block;
+  width: 32px;
+  height: 4px;
+  background-image: url("./../images/customReviews/reviews_points_icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__content::after {
+    bottom: -24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews__content::after {
+    bottom: -15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews__content {
+    margin-bottom: 52px;
+    padding-top: 45px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__content {
+    width: 620px;
+    margin-bottom: 42px;
+    padding-top: 47px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews__content {
+    width: 926px;
+    margin-bottom: 34px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+  }
+}
+
+.reviews__text {
+  position: relative;
+  z-index: 0;
+  padding: 0 35px;
+  letter-spacing: 0.04em;
+  background: repeating-linear-gradient(to bottom, #fafafa, #fafafa 28px, #e1e1e1 29px, #e1e1e1 30px);
+}
+
+.reviews__text::before {
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  top: -14px;
+  left: 0;
+  display: block;
+  width: 54px;
+  height: 40px;
+  background-image: url("./../images/customReviews/reviews_text_icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .reviews__text {
+    font-size: 12px;
+    line-height: 2.55;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__text {
+    font-size: 14px;
+    line-height: 2.16;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews__text {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
+.reviews__name {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.86;
+}
+
+.reviews__name::after {
+  content: '';
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 73px;
+  height: 12px;
+  margin-top: 30px;
+  background-image: url(./../images/customReviews/reviews_dots.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__name::after {
+    margin-top: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__name {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews__name {
+    font-size: 20px;
+  }
+}
+
 .contacts {
-  background-color: #FFF5F6;
+  background-color: #fff5f6;
   padding-bottom: 113px;
 }
 
@@ -175,20 +350,14 @@ img {
 }
 
 .contacts-cards__item {
-  width: auto;
+  width: 220px;
   margin: 10px 10px;
   font-size: 12px;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
           box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 20px;
-}
-
-@media screen and (min-width: 320px) {
-  .contacts-cards__item {
-    width: 220px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -211,7 +380,7 @@ img {
 .contacts-cards-type {
   display: inline-block;
   padding: 0px 20px;
-  background: #F0D1A5;
+  background: #f0d1a5;
   border-radius: 4px;
   font-style: normal;
   font-weight: 500;
@@ -229,11 +398,11 @@ img {
 }
 
 .contacts-cards-type--green {
-  background-color: #C2E297;
+  background-color: #c2e297;
 }
 
 .contacts-cards-city {
-  color: #000;
+  color: #000000;
   padding-top: 25px;
 }
 
@@ -244,7 +413,7 @@ img {
 }
 
 .contacts-cards-text {
-  color: #907E82;
+  color: #907e82;
   padding-bottom: 25px;
   padding-top: 10px;
   line-height: 1.5;
@@ -258,8 +427,8 @@ img {
 }
 
 .contacts-cards-timetable {
-  border-bottom: 1px solid #E1E1E1;
-  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
   padding-bottom: 25px;
   padding-top: 25px;
 }
@@ -272,7 +441,7 @@ img {
 }
 
 .contacts-cards-time {
-  color: #FFA5BA;
+  color: #ffa5ba;
 }
 
 .contacts-cards-timetable__item:not(:last-of-type) {
@@ -297,7 +466,7 @@ img {
 
 .contacts-cards-tel,
 .contacts-cards-mail {
-  color: #907E82;
+  color: #907e82;
   line-height: 1.5;
 }
 
@@ -344,7 +513,7 @@ img {
   border: 0;
   width: 162px;
   height: 44px;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 16px;
@@ -361,7 +530,7 @@ img {
 }
 
 .contacts-btn--inverse {
-  background: #FFFFFF;
+  background: #ffffff;
   color: #D41342;
 }
 /*# sourceMappingURL=main.css.map */
