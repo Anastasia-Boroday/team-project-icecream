@@ -1,39 +1,371 @@
 .hero {
-  height: 665px;
-  background-color: var(--hero-backgroung-color);
-  position: absolute;
+  background-color: var(--bg-header-hero);
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
-}
-
-.main-title {
-  width: 277px;
-  height: 137px;
-  margin-top: 171px;
-  margin-left: 115px;
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 38px;
-  line-height: 44px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--main-white-color);
-  &__passion {
-    font-size: 58px;
-    line-height: 90.5%;
-    color: #d41443;
+  min-width: 320px;
+  height: 502px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    min-width: 768px;
+    height: 400px;
+  }
+  @media screen and (min-width: $desktop) {
+    min-width: 1280px;
+    height: 665px;
   }
 }
 
-.hero-btns {
+.hero-conteiner {
+  position: relative;
+}
+
+.main-title {
   position: absolute;
-  top: 333px;
-  left: 115px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-design-white);
+  z-index: 5;
+  text-align: left;
+  top: 193px;
+  left: 20px;
+  width: 218px;
+  font-size: 26px;
+  line-height: 30px;
+  @media screen and (min-width: $tablet) {
+    top: 102px;
+    left: 34px;
+    width: 162px;
+    height: 80px;
+    font-size: 22px;
+    line-height: 25px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 277px;
+    height: 137px;
+    top: 171px;
+    left: 115px;
+    font-size: 38px;
+    line-height: 44px;
+  }
+  &__passion {
+    color: var(--color-design-main);
+    font-size: 48px;
+    line-height: 96.5%;
+    @media screen and (min-width: $tablet) {
+      font-size: 34px;
+      line-height: 90.5%;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 58px;
+      line-height: 90.5%;
+    }
+  }
+}
+
+.hero-fields {
+  position: absolute;
   display: inline-flex;
-  .hero-btns__item:not(:last-child) {
-    margin-right: 15px;
+  z-index: 5;
+  top: 318px;
+  left: 20px;
+  @media screen and (min-width: $tablet) {
+    top: 202px;
+    left: 34px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 333px;
+    left: 115px;
+  }
+
+  .hero-fields__item {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 8px;
+    line-height: 10px;
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .hero-fields__item:not(:last-child) {
+    margin-right: 9px;
+    @media screen and (min-width: $tablet) {
+      margin-right: 8px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 15px;
+    }
+  }
+  .product-field {
+    border-radius: 20px;
+    background-color: var(--color-design-main);
+    color: var(--color-design-white);
+    padding: 9px 14px;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+    @media screen and (min-width: $desktop) {
+      padding: 15px 23px;
+    }
+  }
+  .product-field:hover {
+    background-color: var(--bg-btn-dark-hover);
+  }
+  .how-made-field {
+    border-radius: 20px;
+    color: var(--color-design-main);
+    background-color: var(--color-design-white);
+    padding: 9px 14px;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+    @media screen and (min-width: $tablet) {
+      padding: 9px 14px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 15px 20px;
+    }
+  }
+  .how-made-field:hover {
+    background-color: var(--bg-btn-light-hover);
+  }
+}
+
+.milk-bucket {
+  position: absolute;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) {
+    top: 245px;
+    left: 34px;
+    width: 124px;
+    height: 126px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 430px;
+    left: 77px;
+    width: 188px;
+    height: 191px;
+  }
+}
+
+.milk-description {
+  position: absolute;
+  text-align: left;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) {
+    top: 292px;
+    left: 154px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 485px;
+    left: 295px;
+  }
+  &__text {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--color-design-white);
+    @media screen and (min-width: $tablet) {
+      width: 120px;
+      font-size: 8px;
+      line-height: 150%;
+      margin-bottom: 8px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 200px;
+      height: 78px;
+      font-size: 14px;
+      line-height: 140%;
+      margin-bottom: 20px;
+    }
+  }
+  &__btn {
+    border: 0;
+    border-radius: 50%;
+    content: '';
+    background-image: url('#icon-arrow');
+    // background-image: url("/images/hero_arrow-right.png");
+    display: inline-flex;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media screen and (min-width: $tablet) {
+      width: 18px;
+      height: 18px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.hero-elips {
+  position: fixed;
+  top: 83px;
+  max-width: 346px;
+  height: 344px;
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 31px;
+    left: 307px;
+    max-width: 324px;
+    height: 322px;
+  }
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 52px;
+    left: 475px;
+    max-width: 538px;
+    height: 538px;
+  }
+}
+
+.hero-icecream {
+  position: absolute;
+  width: 171px;
+  height: 410px;
+  left: 117px;
+  top: 92px;
+  @media screen and (min-width: $tablet) {
+    width: 143px;
+    height: 336px;
+    left: 378px;
+    top: 63px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 108px;
+    left: 594px;
+    width: 236px;
+    height: 557px;
+  }
+}
+
+.hero-girl {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  position: absolute;
+  @media screen and (min-width: $tablet) {
+    width: 168px;
+    height: 133px;
+    top: 266px;
+    left: 566px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 293px;
+    height: 232px;
+    top: 433px;
+    left: 878px;
+  }
+}
+
+.points-info {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  @media screen and (min-width: $tablet) {
+    top: 94px;
+    left: 691px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 156px;
+    left: 1111px;
+  }
+  .points-info__item {
+    position: relative;
+    margin-bottom: 15px;
+    @media screen and (min-width: $tablet) {
+      width: 51px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 92px;
+    }
+  }
+  .points-info__numbers {
+    position: relative;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--color-design-main);
+    text-align: center;
+    letter-spacing: 0.04em;
+    z-index: 3;
+    @media screen and (min-width: $tablet) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 46px;
+      line-height: 53px;
+      margin-bottom: 2px;
+    }
+  }
+
+  .points-info__description {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--color-design-white);
+
+    @media screen and (min-width: $tablet) {
+      font-size: 8px;
+      line-height: 10px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .points-info__ellipse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    @media screen and (min-width: $tablet) {
+      width: 16px;
+      height: 16px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .cafes {
+    .points-info__description {
+      text-align: center;
+    }
+  }
+  .trucks {
+    .points-info__description {
+      @media screen and (min-width: $tablet) {
+        text-align: center;
+      }
+      @media screen and (min-width: $desktop) {
+        text-align: left;
+      }
+    }
   }
 }
