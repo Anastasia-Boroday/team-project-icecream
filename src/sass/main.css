@@ -131,6 +131,12 @@ img {
   margin-right: 15px;
 }
 
+.reviews__section {
+  background-color: #ffffff;
+  color: #000000;
+  padding-bottom: 167px;
+}
+
 .reviews__photo {
   width: 85px;
   margin: 0 auto;
@@ -152,6 +158,10 @@ img {
   .reviews__photo {
     margin-bottom: 15px;
   }
+}
+
+.reviews__set {
+  font-weight: 500;
 }
 
 .reviews__content {
@@ -176,6 +186,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -282,6 +293,7 @@ img {
   background-image: url(./../images/customReviews/reviews_dots.svg);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {

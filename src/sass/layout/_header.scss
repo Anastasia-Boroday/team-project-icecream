@@ -1,1 +1,83 @@
+header {
+  background-color: $bg-header-hero;
+}
 
+.header_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  padding-top: 6px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 37px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 46px;
+  }
+}
+
+.header_logo {
+  margin-right: auto;
+}
+
+.navigation_list {
+  display: flex;
+  margin-right: 110px;
+  @media screen and (max-width: 1279.98px) {
+    display: none;
+  }
+}
+
+.navigation_item {
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:first-child {
+    color: $color-design-main;
+  }
+}
+.navigation_link {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $color-design-white;
+}
+
+.buy-btn {
+  position: relative;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: $bg-btn-dark;
+  border-radius: 22px;
+  border: none;
+  width: 160px;
+  height: 44px;
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+}
+.buy-btn_icon {
+  position: absolute;
+  top: 52.5%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.js-open-menu {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  @media screen and (min-width: $tablet) {
+    margin-right: 28px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
