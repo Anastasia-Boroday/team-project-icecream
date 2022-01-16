@@ -1,5 +1,5 @@
 .footer{
-    background-color: #fff5f6;
+    background-color: $bg-section;
   
      .container{
       margin-bottom:49px;
@@ -14,7 +14,7 @@
        font-size: 18px;
        line-height: 1.667;
        text-transform: uppercase;
-       color: #ffa5ba;
+       color: $color-subtitle;
        margin-bottom:30px;
       }
       &__text-slog{
@@ -23,7 +23,7 @@
         line-height: 1.147;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color:#d41443;
+        color: $color-design-main;
        }
      
         &__social-list{
@@ -39,8 +39,8 @@
         display: flex;
         width: 32px;
         height: 32px;
-        color:#ffffff;
-        background-color: #fea5bb;
+        color: $color-design-white;
+        background-color: $bg-social;
         border-radius: 50%;
         justify-content: center;
         align-items: center;
@@ -50,8 +50,8 @@
          
          &:hover,
          &:focus {
-           background-color: #d41443;
-           color: #ffffff;
+           background-color: $color-design-main;
+           color: $bg-btn-light;
          }
        } 
        &__social-icon {
@@ -66,15 +66,15 @@
         font-weight: 700;
         font-size: 12px;
         line-height: 1.833;
-        color: #000000;
+        color: $color-design-black;
       }
     
       &__contact-link{
         margin-left: 3px;
-        color: #d41443;
+        color: $color-design-main;
       }
       &__copyright{
-        border-top:1px solid #E1E1E1;
+        border-top:1px solid $color-line-in-contacts;
         min-height:83px;
         display:flex;
         justify-content:center;
@@ -88,7 +88,7 @@
         font-size: 14px;
         line-height: 1.5;
         text-align: center;
-        color: #907e82;
+        color: $color-description;
         padding: 0 20px;
       }
     }
