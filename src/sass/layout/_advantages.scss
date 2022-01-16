@@ -1,36 +1,92 @@
 .advantages {
   background-color: $bg-section;
 }
+.section {
+  padding-top: 0;
+  padding-bottom: 100px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
+}
+.advantages__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -60px;
+    margin-top: -60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
 .advantages__item {
   width: 230px;
+  height: 156px;
   position: relative;
-  padding-top: 66px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
   &:not(:last-child) {
-    padding-bottom: 38px;
+    margin-bottom: 38px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0px;
+    }
   }
-
   &::before {
     position: absolute;
     left: 0;
     top: 0;
-    width: 33px;
-    height: 50px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 180px;
+    height: 226px;
+
+    flex-basis: calc(100% / 3 - 60px);
+    margin-left: 60px;
+    margin-top: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 330px;
+    height: 222px;
+
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 .advantages__item1 {
   &::before {
+    max-width: 33px;
+    height: 50px;
     content: url('../images/pseudo-elements-svg/bucket.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      content: url('../images/pseudo-elements-svg/bucket@x2.png');
+    }
   }
 }
 .advantages__item2 {
   &::before {
+    width: 50px;
+    height: 50px;
     content: url('../images/pseudo-elements-svg/bucket-apple.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      content: url('../images/pseudo-elements-svg/bucket-apple@x2.png');
+    }
   }
 }
 .advantages__item3 {
   &::before {
+    width: 44px;
+    height: 50px;
     content: url('../images/pseudo-elements-svg/lollipop-heart.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      content: url('../images/pseudo-elements-svg/lollipop-heart@x2.png');
+    }
   }
 }
 .advantages__item-title {
@@ -38,18 +94,42 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: calc(41px / 36px);
+  line-height: calc(41 / 36);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
   color: $color-design-main;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: calc(55 / 48);
+  }
+  @media screen and (min-width: $desktop) {
+    font-weight: 400;
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    letter-spacing: 0.04em;
+  }
 }
 .advantages__item-text {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 170%;
+  line-height: calc(20 / 12);
 
   color: $color-design-black;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: calc(24p / 14);
+  }
+  @media screen and (min-width: $desktop) {
+    width: 330px;
+    height: 52px;
+    font-size: 16px;
+    line-height: calc(28 / 16);
+    letter-spacing: 0.02em;
+  }
 }
