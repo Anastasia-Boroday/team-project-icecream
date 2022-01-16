@@ -484,6 +484,12 @@ header {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .about-section {
+    padding-bottom: 55px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .about-section {
     padding-bottom: 65px;
@@ -526,7 +532,7 @@ header {
 .about__pre-title {
   margin-bottom: 15px;
   text-align: center;
-  font-family: Titan One;
+  font-family: "Titan One", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;

@@ -4,6 +4,10 @@
   padding-bottom: 39px;
   align-items: center;
 
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 55px;
+  }
+
   @media screen and (min-width: $desktop) {
     padding-bottom: 65px;
   }
@@ -122,7 +126,7 @@
 
 .about__mob-block {
   padding: 0px 30px;
-  margin-bottom: 17px;
+  // margin-bottom: 17px;
 
   @media screen and (min-width: $tablet) {
     padding: 0px;
