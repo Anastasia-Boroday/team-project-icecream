@@ -1,0 +1,145 @@
+.reviews__section {
+  background-color: $color-design-white;
+  color: $color-design-black;
+  padding-bottom: 167px;
+}
+.reviews__photo {
+  width: 85px;
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 29px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+  }
+}
+.reviews__set {
+  font-weight: 500;
+}
+
+.reviews__content {
+  position: relative;
+  background-color: #fafafa;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    width: 32px;
+    height: 4px;
+    background-image: url('./../images/customReviews/reviews_points_icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+
+    @media screen and (min-width: $tablet) {
+      bottom: -24px;
+    }
+    @media screen and (min-width: $desktop) {
+      bottom: -15px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 52px;
+    padding-top: 45px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 620px;
+    margin-bottom: 42px;
+    padding-top: 47px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 926px;
+    margin-bottom: 34px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+  }
+}
+
+.reviews__text {
+  position: relative;
+  z-index: 0;
+  padding: 0 35px;
+  letter-spacing: 0.04em;
+  background: repeating-linear-gradient(
+    to bottom,
+    #fafafa,
+    #fafafa 28px,
+    #e1e1e1 29px,
+    #e1e1e1 30px
+  );
+  &::before {
+    content: ' ';
+    position: absolute;
+    z-index: -1;
+    top: -14px;
+    left: 0;
+    display: block;
+    width: 54px;
+    height: 40px;
+    background-image: url('./../images/customReviews/reviews_text_icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 2.55;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 2.16;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
+.reviews__name {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.86;
+
+  &::after {
+    content: '';
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 73px;
+    height: 12px;
+    margin-top: 30px;
+    background-image: url(./../images/customReviews/reviews_dots.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 35px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+  }
+}
