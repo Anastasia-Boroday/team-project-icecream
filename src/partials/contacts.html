@@ -97,7 +97,7 @@
         </button>
       </li>
       <li class="contacts-btn-list__item">
-        <button type="button" class="contacts-btn contacts-btn--inverse">
+        <button type="button" class="contacts-btn contacts-btn--inverse" onclick="myFunction()">
           Franchise
           <svg id="icon-Vector1" viewBox="0 0 19 32" width="4" height="8">
             <path
@@ -114,5 +114,23 @@
         </button>
       </li>
     </ul>
+    <div class="popup">
+      <iframe
+        class="popupmap"
+        id="myPopup"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d162622.74432319676!2d30.534648627464385!3d50.44133232039823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1642347786131!5m2!1suk!2sua"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
   </div>
+
+  <script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+      var popup = document.getElementById('myPopup');
+      popup.classList.toggle('show');
+    }
+  </script>
 </section>

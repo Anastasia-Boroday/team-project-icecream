@@ -148,7 +148,9 @@
 }
 
 .contacts-btn-list__item:last-of-type {
+  @media screen and (min-width: $tablet) {  
     margin-left: 14.5px;
+  }
 }
 
 .contacts-btn {
@@ -172,5 +174,40 @@
 .contacts-btn--inverse {
   background: $bg-btn-light;
   color: #D41342;
+  &:hover,
+  &:focus {
+    background-color: $bg-btn-light-hover;
+  }
+}
+
+.popup {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.popup .popupmap {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
 
