@@ -61,11 +61,15 @@
 }
 .advantages__item1 {
   &::before {
-    max-width: 33px;
+    width: 33px;
     height: 50px;
-    content: url('../images/pseudo-elements-svg/bucket.png');
+    // content: url('../images/pseudo-elements-svg/bucket.png');
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   content: url('../images/pseudo-elements-svg/bucket@x2.png');
+    // }
+    background-image: url(./../images/pseudo-elements-svg/bucket.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      content: url('../images/pseudo-elements-svg/bucket@x2.png');
+      background-image: url(./../images/pseudo-elements-svg/bucket@x2.png);
     }
   }
 }
