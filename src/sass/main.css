@@ -7,6 +7,7 @@ body {
   font-family: "DM Sans", sans-serif;
   color: #000000;
   background-color: #ffffff;
+  min-width: 320px;
 }
 
 .list {
@@ -84,6 +85,16 @@ img {
     width: 1280px;
     padding-left: 115px;
     padding-right: 115px;
+  }
+}
+
+.section {
+  padding: 50px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 100px 0;
   }
 }
 
@@ -464,6 +475,7 @@ header {
   }
 }
 
+<<<<<<< HEAD
 .about-section {
   background-color: #fff5f6;
   padding-top: 125px;
@@ -495,10 +507,37 @@ header {
 @media screen and (min-width: 768px) {
   .about__milk-overlay {
     background-image: none;
+=======
+.advantages-section {
+  padding-top: 0;
+  padding-bottom: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-section {
+    padding-bottom: 100px;
+  }
+}
+
+.advantages {
+  background-color: #fff5f6;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -60px;
+    margin-bottom: -60px;
+>>>>>>> main
   }
 }
 
 @media screen and (min-width: 1280px) {
+<<<<<<< HEAD
   .about__milk-overlay {
     background-size: 1280px;
     background-image: url(../images/about/ab-milk-desktop.png);
@@ -569,10 +608,54 @@ header {
     font-size: 58px;
     line-height: 66px;
     letter-spacing: 0.06em;
+=======
+  .advantages__list {
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+}
+
+.advantages__item {
+  width: 230px;
+  height: 156px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
+.advantages__item::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__item::before {
+    top: -25px;
+>>>>>>> main
   }
 }
 
 @media screen and (min-width: 768px) {
+<<<<<<< HEAD
   .about__tablet-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -580,10 +663,20 @@ header {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+=======
+  .advantages__item {
+    width: 180px;
+    height: 226px;
+    -ms-flex-preferred-size: calc(100% / 3 - 60px);
+        flex-basis: calc(100% / 3 - 60px);
+    margin-left: 60px;
+    margin-bottom: 60px;
+>>>>>>> main
   }
 }
 
 @media screen and (min-width: 1280px) {
+<<<<<<< HEAD
   .about__tablet-block {
     margin-bottom: 0px;
   }
@@ -639,17 +732,90 @@ header {
     margin-top: 50px;
     font-size: 14px;
     line-height: 1.76;
+=======
+  .advantages__item {
+    width: 330px;
+    height: 200px;
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.advantages__item1::before {
+  width: 50px;
+  height: 50px;
+  content: url("../images/pseudo-elements-svg/bucket.png");
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages__item1::before {
+    content: url("../images/pseudo-elements-svg/bucket@x2.png");
+  }
+}
+
+.advantages__item2::before {
+  width: 50px;
+  height: 50px;
+  content: url("../images/pseudo-elements-svg/bucket-apple.png");
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages__item2::before {
+    content: url("../images/pseudo-elements-svg/bucket-apple@x2.png");
+  }
+}
+
+.advantages__item3::before {
+  width: 44px;
+  height: 50px;
+  content: url("../images/pseudo-elements-svg/lollipop-heart.png");
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages__item3::before {
+    content: url("../images/pseudo-elements-svg/lollipop-heart@x2.png");
+  }
+}
+
+.advantages__item-title {
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(41 / 36);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__item-title {
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: calc(55 / 48);
+>>>>>>> main
   }
 }
 
 @media screen and (min-width: 1280px) {
+<<<<<<< HEAD
   .about__text-main {
     margin-bottom: 35px;
     font-size: 16px;
+=======
+  .advantages__item-title {
+    font-weight: 400;
+    font-size: 58px;
+    line-height: calc(66 / 58);
+>>>>>>> main
     letter-spacing: 0.04em;
   }
 }
 
+<<<<<<< HEAD
 .about__text-secondary {
   margin-bottom: 17px;
   font-style: normal;
@@ -665,10 +831,26 @@ header {
     font-size: 14px;
     line-height: 1.76;
     letter-spacing: 0.04em;
+=======
+.advantages__item-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(20 / 12);
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__item-text {
+    font-size: 14px;
+    line-height: calc(24p / 14);
+>>>>>>> main
   }
 }
 
 @media screen and (min-width: 1280px) {
+<<<<<<< HEAD
   .about__text-secondary {
     margin-bottom: 45px;
     font-size: 14px;
@@ -703,10 +885,37 @@ header {
 @media screen and (min-width: 768px) {
   .about__btn {
     margin-right: 165px;
+=======
+  .advantages__item-text {
+    width: 330px;
+    height: 52px;
+    font-size: 16px;
+    line-height: calc(28 / 16);
+    letter-spacing: 0.02em;
+  }
+}
+
+.gallery {
+  text-align: center;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #ffffff), color-stop(40%, #fff5f6));
+  background: linear-gradient(to top, #ffffff 60%, #fff5f6 40%);
+}
+
+.gallery-img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 364px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-img {
+    max-width: 786px;
+>>>>>>> main
   }
 }
 
 @media screen and (min-width: 1280px) {
+<<<<<<< HEAD
   .about__btn {
     margin-left: 0px;
     margin-right: auto;
@@ -735,6 +944,13 @@ header {
   fill: currentColor;
 }
 
+=======
+  .gallery-img {
+    max-width: 1280px;
+  }
+}
+
+>>>>>>> main
 .reviews__section {
   background-color: #ffffff;
   color: #000000;
