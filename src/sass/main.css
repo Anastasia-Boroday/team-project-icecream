@@ -236,6 +236,9 @@ header {
     margin-bottom: 30px;
     padding: 15px 0;
   }
+  .btn__buy:hover, .btn__buy:focus {
+    background-color: #ECEBEB;
+  }
   .mob__nav--item {
     border-bottom: 1px solid #E18298;
     border-top: 1px solid #E18298;
@@ -261,6 +264,7 @@ header {
   .mob__nav--link:hover, .mob__nav--link:focus {
     color: #D41443;
     background-color: #E18298;
+    text-align: center;
   }
 }
 

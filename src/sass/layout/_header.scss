@@ -152,6 +152,10 @@ header {
       margin-bottom: 30px;
       padding: 15px 0;
     }
+    &:hover,
+    &:focus{
+      background-color: #ECEBEB;;
+    }
   }
 
     // mob-nav
@@ -184,7 +188,8 @@ header {
       &:hover,
       &:focus{
         color: #D41443;
-        background-color:#E18298 ;
+        background-color:#E18298;
+        text-align: center;
       }
     }
 
