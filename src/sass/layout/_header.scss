@@ -82,3 +82,21 @@ header {
   }
 }
 
+
+// mob-menu
+.mob_menu{
+  position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: blueviolet;
+    z-index: 999;
+}
+
+.btn_mob--close{
+  position: fixed;
+    top: 25px;
+    right: 30px;
+    margin-top: 60px;
+}
