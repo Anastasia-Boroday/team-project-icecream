@@ -1,25 +1,25 @@
-.advantages {
-  background-color: $bg-section;
-}
-.section {
+.advantages-section {
   padding-top: 0;
   padding-bottom: 100px;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 0;
     padding-bottom: 100px;
   }
+}
+.advantages {
+  background-color: $bg-section;
 }
 .advantages__list {
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     margin-left: -60px;
-    margin-top: -60px;
+    margin-bottom: -60px;
+    // background-color: red;
   }
   @media screen and (min-width: $desktop) {
     margin-left: -30px;
-    margin-top: -30px;
+    margin-bottom: -30px;
   }
 }
 .advantages__item {
@@ -41,6 +41,11 @@
     position: absolute;
     left: 0;
     top: 0;
+    @media screen and (min-width: $tablet) {
+      top: -25px;
+    }
+    @media screen and (min-width: $desktop) {
+    }
   }
   @media screen and (min-width: $tablet) {
     width: 180px;
@@ -48,15 +53,15 @@
 
     flex-basis: calc(100% / 3 - 60px);
     margin-left: 60px;
-    margin-top: 60px;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: $desktop) {
     width: 330px;
-    height: 222px;
+    height: 200px;
 
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 .advantages__item1 {

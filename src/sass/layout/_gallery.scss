@@ -1,16 +1,10 @@
 .gallery {
-  position: relative;
-  align-content: center;
+  text-align: center;
+  // align-content: center;
 
-  background: linear-gradient(to top, $color-design-white 78%, $bg-section 32%);
-  @media screen and (min-width: $tablet) {
-    background: linear-gradient(to top, $color-design-white 78%, $bg-section 32%);
-  }
-  @media screen and (min-width: $desktop) {
-    background: linear-gradient(to top, $color-design-white 78%, $bg-section 32%);
-  }
+  background: linear-gradient(to top, $color-design-white 60%, $bg-section 40%);
 }
-.gallery-box {
+.gallery-img {
   margin-left: auto;
   margin-right: auto;
   max-width: 364px;
