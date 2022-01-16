@@ -155,26 +155,6 @@ header {
   color: #ffffff;
 }
 
-.buy-btn {
-  position: relative;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  color: #d41443;
-  border-radius: 22px;
-  border: none;
-  width: 160px;
-  height: 44px;
-}
-
-@media screen and (max-width: 767.98px) {
-  .buy-btn {
-    display: none;
-  }
-}
-
 .js-open-menu {
   width: 40px;
   height: 40px;

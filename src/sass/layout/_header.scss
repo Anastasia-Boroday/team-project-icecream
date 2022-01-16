@@ -47,22 +47,22 @@ header {
   color: $color-design-white;
 }
 
-.buy-btn {
-  position: relative;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  color: $bg-btn-dark;
-  border-radius: 22px;
-  border: none;
-  width: 160px;
-  height: 44px;
-  @media screen and (max-width: 767.98px) {
-    display: none;
-  }
-}
+// .buy-btn {
+//   position: relative;
+//   font-family: DM Sans;
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 16px;
+//   line-height: 21px;
+//   color: $bg-btn-dark;
+//   border-radius: 22px;
+//   border: none;
+//   width: 160px;
+//   height: 44px;
+//   @media screen and (max-width: 767.98px) {
+//     display: none;
+//   }
+// }
 // .buy-btn_icon {
 //   position: absolute;
 //   top: 52.5%;
