@@ -244,6 +244,10 @@ header {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main-title {
   position: absolute;
   font-family: Titan One;
@@ -503,7 +507,7 @@ header {
 .milk-description__btn {
   border: 0;
   border-radius: 50%;
-  content: '';
+  position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -524,6 +528,10 @@ header {
     width: 24px;
     height: 24px;
   }
+}
+
+.arrow-right {
+  position: absolute;
 }
 
 .hero-elips {

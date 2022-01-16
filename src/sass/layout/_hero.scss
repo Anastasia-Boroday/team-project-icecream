@@ -23,6 +23,10 @@
   position: relative;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main-title {
   position: absolute;
   font-family: Titan One;
@@ -196,10 +200,11 @@
       margin-bottom: 20px;
     }
   }
+
   &__btn {
     border: 0;
     border-radius: 50%;
-    content: '';
+    position: relative;
     // background-image: url('#icon-arrow');
     // background-image: url("/images/hero_arrow-right.png");
     display: inline-flex;
@@ -215,6 +220,10 @@
       height: 24px;
     }
   }
+}
+.arrow-right {
+  position: absolute;
+  text-align: center;
 }
 
 .hero-elips {
