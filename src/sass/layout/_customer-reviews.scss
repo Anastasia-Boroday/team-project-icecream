@@ -1,3 +1,8 @@
+.reviews__section {
+  background-color: $color-design-white;
+  color: $color-design-black;
+  padding-bottom: 167px;
+}
 .reviews__photo {
   width: 85px;
   margin: 0 auto;
@@ -10,6 +15,9 @@
   @media screen and (min-width: $desktop) {
     margin-bottom: 15px;
   }
+}
+.reviews__set {
+  font-weight: 500;
 }
 
 .reviews__content {
@@ -32,6 +40,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    cursor: pointer;
 
     @media screen and (min-width: $tablet) {
       bottom: -24px;
@@ -121,6 +130,7 @@
     background-image: url(./../images/customReviews/reviews_dots.svg);
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 
     @media screen and (min-width: $tablet) {
       margin-top: 35px;
